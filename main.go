@@ -18,8 +18,8 @@ import (
 func main() {
 	app := cli.NewApp()
 	app.Name = "spt"
-	app.Usage = "SNS Publish to Topic\n\n A simple CLI that takes input to STDI and sends publishes it to an SNS Topic"
-	app.UsageText = "cat one_pay_load_per_line.txt | spt --topic-arn ... --region us-west-2"
+	app.Usage = "SNS Publish to Topic\n\n A simple CLI that takes input to STDIN and sends publishes it to an SNS Topic"
+	app.UsageText = "cat one_pay_load_per_line.txt | spt --topic-arn ..."
 	app.Version = "1.0.0"
 	app.HideHelp = true
 	app.HideVersion = true
